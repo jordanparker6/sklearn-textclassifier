@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  text-classifier: 
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    container_name: text-classifier
+    restart: unless-stopped
+    ports: 
+      - "8080:8080"

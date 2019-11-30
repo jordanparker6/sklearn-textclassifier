@@ -1,0 +1,6 @@
+input/*
+.git
+.gitignore
+train.py
+Dockerfile
+docker-compose.yml

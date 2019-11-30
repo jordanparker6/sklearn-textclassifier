@@ -1,0 +1,7 @@
+numpy 
+gevent
+flask
+scikit-learn
+python-box
+pandas
+gunicorn

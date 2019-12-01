@@ -3,7 +3,7 @@ A production ready text classifier for models following the Scikit-Learn API.
 
 ## Train
 
-A model must be trained and saved as a pickle file prior to serving. The train.py script within the train directory assists with this.
+A model must be trained and pickled prior to serving. The train.py script within the train directory assists with this.
 
 The following models are available for training:
  - LinearSVC
@@ -12,7 +12,7 @@ The following models are available for training:
 
 ### Set-Up
 
-The train.py script requires you to set up the following directories within the train directory:
+The train.py script requires you to set-up the train directory as follows:
 
 <pre>
 /train/
@@ -26,10 +26,10 @@ The train.py script requires you to set up the following directories within the 
 
 - data.csv is the he data file containing your text and labels.
 - config.json overwrites the default training configurations.
-- hyperparameter.json - OPTIONAL: A file to adjust default hyperparameters.
+- hyperparameter.json adjust the models default hyperparameters.
 - model.p is the pickled trained Scikit-Learn estimator object.
 
-Defaults:
+Default config:
 
 ```
 {
@@ -39,6 +39,11 @@ Defaults:
     "model": 'LinearSVC'
 }
 ```
+
+- "label" is the name of the label column in data.csv.
+- "text" is the name of the text column in data.csv.
+- "run_eval" is a boolean switch for 5-fold cross-validation.
+- "model" is the name of the model used (see available models).
 
 ### Instructions
 

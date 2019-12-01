@@ -27,7 +27,7 @@ The train.py script requires you to set-up the train directory as follows:
 - data.csv is the the data file containing your text and labels.
 - config.json overwrites the default training configurations.
 - hyperparameter.json adjust the models default hyperparameters.
-- model.p is the pickled trained Scikit-Learn estimator object.
+- model.p is the trained Scikit-Learn estimator object.
 
 Default config:
 

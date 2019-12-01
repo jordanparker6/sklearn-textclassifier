@@ -24,6 +24,7 @@ The train.py script requires you to set-up the train directory as follows:
      | -- hyperparameter.json (OPTIONAL)
 | -- output
      | -- model.p (AFTER TRAINING)
+| -- train.py
 </pre>
 
 - data.csv is the the data file containing your text and labels.

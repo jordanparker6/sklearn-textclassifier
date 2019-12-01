@@ -1,11 +1,9 @@
-import flask
-import json
-import pickle
+import flask, json, pickle, os
 from predict import Predcitor
 
 app = flask.Flask(__name__)
 
-predictor = Predcitor("output/model.p")
+predictor = Predcitor(os.environ["MODEL_PATH"])
 
 @app.route("/ping", methods=["GET"])
 def ping():

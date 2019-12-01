@@ -13,7 +13,6 @@ RUN mkdir /app
 COPY . /app
 COPY nginx.conf /usr/share/nginx/nginx.conf
 
-
 WORKDIR  /app
 
 RUN pip3 install Cython numpy

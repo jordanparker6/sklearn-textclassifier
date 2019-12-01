@@ -5,7 +5,7 @@ A production ready text classifier for models following the Scikit-Learn API.
 
 A model must be trained and saved as a pickle file prior to serving. The train.py script within the train directory assists with this.
 
-The followign models are available for training:
+The following models are available for training:
  - LinearSVC
 
 ### Set-Up

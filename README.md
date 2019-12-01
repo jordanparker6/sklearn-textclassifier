@@ -41,10 +41,10 @@ Envitoment Variables:
 - MODEL_PATH = model.p       Path to the trained model within the serve folder.
 
 To launch the inference server:
- - (1) ```git clone https://github.com/jordanparker6/sklearn-textclassifier```
- - (2) Copy a pickle file of a trained Scikit-Learn model in the serve directory
- - (3) ```docker-compose build```
- - (4) ```docker-compose up```
+ - ```git clone https://github.com/jordanparker6/sklearn-textclassifier```
+ - Copy model.p to the serve directory
+ - ```docker-compose build```
+ - ```docker-compose up```
 
 The app will be available at localhost:8080. This can be configured in nginx.conf.
 

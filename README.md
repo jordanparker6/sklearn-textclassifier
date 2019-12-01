@@ -7,6 +7,8 @@ A model must be trained and saved as a pickle file prior to serving. The train.p
 
 The following models are available for training:
  - LinearSVC
+ - MultinomialNB
+ - LogisiticRegression
 
 ### Set-Up
 

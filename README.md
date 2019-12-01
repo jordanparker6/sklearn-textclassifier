@@ -1,7 +1,7 @@
 # sklearn-textclassifier
 A production ready text classifier for models following the Scikit-Learn API.
 
-This repository allows you to train a text classifier model and then deploy that model as a containerised Flask app served with both a gunicorn application server and Nginx webserver/reverse-proxy.
+This repository allows you to train a text classifier and then deploy that model as a containerised, production ready Flask app using both gunicorn and nginx.
 
 ## Train
 

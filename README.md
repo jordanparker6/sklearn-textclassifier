@@ -20,12 +20,14 @@ The train.py script requirs you to set up the following directories within the t
 
 The train/train.py script has the following defaults:
 
-```{
+```
+{
     "label": "label",
     "text": "text",
     "run_eval": True,
     "model": 'LinearSVC'
-}```
+}
+```
 
 ### Instructions
 

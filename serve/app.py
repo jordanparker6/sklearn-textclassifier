@@ -17,8 +17,8 @@ def ping():
     return flask.Response(response="\n", status=status, mimetype="application/json")
 
 
-@app.route("/classify", methods=["POST"])
-def classify():
+@app.route("/predict", methods=["POST"])
+def predict():
     data = None
     text = None
 

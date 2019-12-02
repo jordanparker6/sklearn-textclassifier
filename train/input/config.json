@@ -1,0 +1,6 @@
+{
+    "label": "label",
+    "text": "text",
+    "run_eval": true,
+    "model": "LinearSVC"
+}

@@ -15,12 +15,12 @@ The following models are available for training:
 The train.py script requires you to set up the following directories within the train directory:
 - /input
     - /data.csv - REQUIRED: The data file containing your text and labels.
-    - /config.json - OPTIONAL: A file to overwrite default training configurations.
+    - /config.json - REQUIRED: A training configuration file.
     - /hyperparameter.json - OPTIONAL: A file to adjust default hyperparameters.
 - output:
     - This is where the trained model.p file will be placed.
 
-The train/train.py script has the following defaults:
+The config.json file has the following defaults:
 
 ```
 {
@@ -52,11 +52,11 @@ The app will be available at localhost:8080. This can be configured in nginx.con
 
 ### API EndPoints
 
-#### Clasify
+#### Predict
 
-Text classification endpoint.
+The model inference endpoint.
 
-- Endpoint: /classify
+- Endpoint: /predict
 - Method: POST
 - Accepts: JSON
 - Body: {

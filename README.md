@@ -1,9 +1,11 @@
 # sklearn-textclassifier
 A production ready text classifier for models following the Scikit-Learn API.
 
+This repository allows you to train a text classifier and then deploy that model as a containerised, production ready Flask app using both gunicorn and nginx.
+
 ## Train
 
-A model must be trained and saved as a pickle file prior to serving. The train.py script within the train directory assists with this.
+A model must be trained and pickled prior to serving. The train.py script within the train directory assists with this.
 
 The following models are available for training:
  - LinearSVC
@@ -12,6 +14,7 @@ The following models are available for training:
 
 ### Set-Up
 
+<<<<<<< HEAD
 The train.py script requires you to set up the following directories within the train directory:
 - /input
     - /data.csv - REQUIRED: The data file containing your text and labels.
@@ -21,6 +24,27 @@ The train.py script requires you to set up the following directories within the 
     - This is where the trained model.p file will be placed.
 
 The config.json file has the following defaults:
+=======
+The train.py script requires you to set-up the train directory as follows:
+
+<pre>
+/train/
+| -- input
+     | -- data.csv
+     | -- config.json (OPTIONAL)
+     | -- hyperparameter.json (OPTIONAL)
+| -- output
+     | -- model.p (AFTER TRAINING)
+| -- train.py
+</pre>
+
+- data.csv is the the data file containing your text and labels.
+- config.json overwrites the default training configurations.
+- hyperparameter.json adjust the models default hyperparameters.
+- model.p is the trained Scikit-Learn estimator object.
+
+Default config:
+>>>>>>> 1358cc18200c498b710625fb4f71f64a20fc543a
 
 ```
 {
@@ -30,6 +54,11 @@ The config.json file has the following defaults:
     "model": 'LinearSVC'
 }
 ```
+
+- "label" is the name of the label column in data.csv.
+- "text" is the name of the text column in data.csv.
+- "run_eval" is a boolean switch for 5-fold cross-validation.
+- "model" is the name of the model used (see available models).
 
 ### Instructions
 

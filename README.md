@@ -14,17 +14,6 @@ The following models are available for training:
 
 ### Set-Up
 
-<<<<<<< HEAD
-The train.py script requires you to set up the following directories within the train directory:
-- /input
-    - /data.csv - REQUIRED: The data file containing your text and labels.
-    - /config.json - REQUIRED: A training configuration file.
-    - /hyperparameter.json - OPTIONAL: A file to adjust default hyperparameters.
-- output:
-    - This is where the trained model.p file will be placed.
-
-The config.json file has the following defaults:
-=======
 The train.py script requires you to set-up the train directory as follows:
 
 <pre>
@@ -44,7 +33,6 @@ The train.py script requires you to set-up the train directory as follows:
 - model.p is the trained Scikit-Learn estimator object.
 
 Default config:
->>>>>>> 1358cc18200c498b710625fb4f71f64a20fc543a
 
 ```
 {
